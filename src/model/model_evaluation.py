@@ -44,6 +44,8 @@ file_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
+os.makedirs("reports", exist_ok=True)
+
 def load_model(file_path: str):
     """Load the trained model from a file."""
     try:
