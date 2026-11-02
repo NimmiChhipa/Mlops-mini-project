@@ -11,7 +11,6 @@ import mlflow.sklearn
 import dagshub
 import os
 
-os.environ["DAGSHUB_PAT"] = "4b66c30eb3be0bd283c2d27449d7fd5d663d6caa"
 # Set up DagsHub credentials for MLflow tracking
 dagshub_token = os.getenv("DAGSHUB_PAT")
 if not dagshub_token:
